@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu section subpage-top" id="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Premium Menu</h2>
+                <p>From fiery grills to comforting swallows. Taste the culture.</p>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="menu-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Appetizers & Starters</button>
+                <button class="filter-btn" data-filter="foods">Foods</button>
+                <button class="filter-btn" data-filter="specials">Chef's Specials</button>
+                <button class="filter-btn" data-filter="drinks">Drinks & Wine</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="menu-search reveal">
+                <div class="search-container">
+                    <input type="text" id="menuSearch" placeholder="Search menu items..." class="search-input">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L16.5 16.5M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+
+                <!-- Starters -->
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-1" data-name="Spicy Goat Meat Pepper Soup" data-price="5500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/goatmeatpeppersoup (2).jpg" alt="Goat Meat Pepper Soup" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Spicy Goat Meat Pepper Soup</h3>
+                            <span class="price">₦5,500</span>
+                        </div>
+                        <p>A fiery and aromatic broth loaded with tender goat meat chunks and traditional Nigerian spices. The perfect kickstarter.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-1')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-2" data-name="Golden Puff Puff & Spicy dip" data-price="2500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/Puff Puff.jpg" alt="Golden Puff Puff" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Golden Puff Puff & Spicy dip</h3>
+                            <span class="price">₦2,500</span>
+                        </div>
+                        <p>Sweet, deep-fried dough balls served warm with an optional side of our signature spicy pepper sauce.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-2')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-3" data-name="Spicy Snail Kebab" data-price="7500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/spicysnailkebab.jpg" alt="Spicy Snail Kebab" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Spicy Snail Kebab</h3>
+                            <span class="price">₦7,500</span>
+                        </div>
+                        <p>Plump, juicy snails slow-cooked and grilled on skewers with onions, bell peppers, and fierce habanero sauce.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-3')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-4" data-name="Gizdodo Delite" data-price="4000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/gizdododelite.jpg" alt="Gizdodo" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Gizdodo Delite</h3>
+                            <span class="price">₦4,000</span>
+                        </div>
+                        <p>A beautiful marriage of fried plantain cubes and chewy gizzards tossed in a rich, spicy tomato pepper sauce.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-4')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-5" data-name="Chicken Suya Wings" data-price="6000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/chickensuyawings.jpg" alt="Chicken Suya Wings" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Chicken Suya Wings</h3>
+                            <span class="price">₦6,000</span>
+                        </div>
+                        <p>Char-grilled chicken wings heavily coated in our signature peanut-based Yaji spice blend. Sticky and spicy.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-5')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-6" data-name="Spicy Asun Bowl" data-price="6500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/asunbowl.jpg" alt="Spicy Asun Bowl" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Spicy Asun Bowl</h3>
+                            <span class="price">₦6,500</span>
+                        </div>
+                        <p>Smokey, chopped roasted goat meat heavily peppered with scotch bonnets and onions. A true Lagos party starter.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-6')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="starters" data-id="starter-7" data-name="Croaker Fish Pepper Soup" data-price="7000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/goatmeatpeppersoup (2).jpg" alt="Fish Pepper Soup" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Croaker Fish Pepper Soup</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                        <p>Freshly cut croaker fish steeped in a light, extraordinarily spicy broth flavored with scent leaves and native spices.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('starter-7')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Foods (Mains) -->
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-1" data-name="Smokey Party Jollof" data-price="8500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/smokeypartyjollof.jpg" alt="Party Jollof Rice" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Smokey Party Jollof</h3>
+                            <span class="price">₦8,500</span>
+                        </div>
+                        <p>Authentic firewood-style smokey jollof rice, served with roasted chicken and fried plantains (dodo).</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-1')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-2" data-name="Pounded Yam & Egusi" data-price="10000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/poundedyamandegusi.jpg" alt="Pounded Yam and Egusi" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Pounded Yam & Egusi</h3>
+                            <span class="price">₦10,000</span>
+                        </div>
+                        <p>Smooth, freshly pounded yam paired with rich melon seed soup, assorted meat, and stockfish.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-2')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-3" data-name="Amala, Ewedu & Gbegiri" data-price="9000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/amalaewedu.jpg" alt="Amala and Ewedu" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Amala, Ewedu & Gbegiri</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                        <p>The legendary Abula! Cloud-soft yam flour morsels served with a mix of jute leaf soup, bean soup, and assorted meats.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-3')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-4" data-name="Edikang Ikong & Fufu" data-price="11000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/edikangikong.jpg" alt="Edikang Ikong Soup" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Edikang Ikong & Fufu</h3>
+                            <span class="price">₦11,000</span>
+                        </div>
+                        <p>Rich, nutrient-packed vegetable soup native to Calabar, loaded with dry fish, periwinkles, and beef. Paired with soft fufu.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-4')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-5" data-name="Ofada Rice & Ayamase" data-price="10500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/ofada rice.jpg" alt="Ofada Rice" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Ofada Rice & Ayamase</h3>
+                            <span class="price">₦10,500</span>
+                        </div>
+                        <p>Locally grown short-grain rice wrapped in traditional leaves, served with the infamously spicy green pepper designer stew.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-5')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-6" data-name="Efo Riro & Pounded Yam" data-price="9500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/eforiropoundedyam.jpg" alt="Efo Riro" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Efo Riro & Pounded Yam</h3>
+                            <span class="price">₦9,500</span>
+                        </div>
+                        <p>A lavish spinach stew fried in palm oil with locust beans, iru, and assorted meats, served beside fresh pounded yam.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-6')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="foods" data-id="food-7" data-name="Seafood Okra & Eba" data-price="12000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/seafood okro special.jpg" alt="Seafood Okra" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Seafood Okra & Eba</h3>
+                            <span class="price">₦12,000</span>
+                        </div>
+                        <p>A deluxe, deeply flavorful okra soup swimming with fresh prawns, crabs, and fish chunks. Served with golden yellow garri.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('food-7')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chef's Specials -->
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-1" data-name="Lagos Grill Platter" data-price="25000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/Asunplatter.jpg" alt="Spicy Asun Platter" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Lagos Grill Platter</h3>
+                            <span class="price">₦25,000</span>
+                        </div>
+                        <p>A massive board for sharing: premium beef suya, spicy asun (goat meat), grilled turkey, and sweet potato fries.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-1')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-2" data-name="Ocean Bounty Platter" data-price="35000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/seafood platter.jpg" alt="Seafood Platter" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Ocean Bounty Platter</h3>
+                            <span class="price">₦35,000</span>
+                        </div>
+                        <p>Grilled croaker fish, tiger prawns in garlic butter, calamari rings, and spicy plantains. Fit for royalty.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-2')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-3" data-name="Authentic Nkwobi" data-price="9000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/Authentic nkwobi.jpg" alt="Authentic Nkwobi" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Authentic Nkwobi</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                        <p>Slow-cooked cow foot mixed in a rich, spicy palm oil paste with utilitarian seeds. A cultural masterpiece.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-3')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-4" data-name="Catfish Point & Kill" data-price="15000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/catfishpointandkill.jpg" alt="Point and Kill Catfish" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Catfish Point & Kill</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                        <p>A whole massive catfish prepared to order in a bubbling, deeply aromatic native pepper soup broth. A Nigerian bar classic.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-4')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-5" data-name="Roasted Boli & Fish" data-price="12500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/boliandfish.jpg" alt="Roasted Boli and Fish" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Roasted Boli & Fish</h3>
+                            <span class="price">₦12,500</span>
+                        </div>
+                        <p>Street food elevated. Perfectly roasted ripe plantains served with a whole grilled croaker and a rich pepper sauce.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-5')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-6" data-name="Ewa Agoyin & Agege Bread" data-price="6500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/Ewa Agoyin & Plantain.jpg" alt="Ewa Agoyin" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Ewa Agoyin & Plantain</h3>
+                            <span class="price">₦6,500</span>
+                        </div>
+                        <p>Extremely soft mashed beans drowned in our dark, caramelized, and fiery Agoyin pepper sauce. Served with fresh bread.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-6')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-7" data-name="Fisherman Soup Platter" data-price="28000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/fishermansoup.jpg" alt="Fisherman Soup" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Fisherman Soup Platter</h3>
+                            <span class="price">₦28,000</span>
+                        </div>
+                        <p>A homage to the Niger Delta. A rich palm oil reduction packed with fresh fish, squid, prawns, and crabs. Comes with Pounded Yam.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-7')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="specials" data-id="special-8" data-name="Premium Ram Suya" data-price="22000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/ramsuya.jpg" alt="Premium Ram Suya" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Premium Ram Suya</h3>
+                            <span class="price">₦22,000</span>
+                        </div>
+                        <p>The ultimate Suya experience. Premium cuts of tender ram meat roasted on open coals with authentic Northern spices.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('special-8')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-1" data-name="Chilled Zobo Royalle" data-price="2500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/chilled zobo.jpg" alt="Zobo Drink" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Chilled Zobo Royalle</h3>
+                            <span class="price">₦2,500</span>
+                        </div>
+                        <p>Refreshing hibiscus drink infused with pineapple, ginger, and a hint of cloves.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-1')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-2" data-name="South African Shiraz" data-price="18000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/redwine.jpg" alt="House Red Wine" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>South African Shiraz</h3>
+                            <span class="price">₦18,000 / Bottle</span>
+                        </div>
+                        <p>A bold and spicy red wine with notes of dark plum and black pepper. Pairs wonderfully with our spicy grills.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-2')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-3" data-name="Fresh Palm Wine" data-price="4000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/freshpalmwine.jpg" alt="Fresh Palm Wine" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Fresh Palm Wine</h3>
+                            <span class="price">₦4,000 / Calabash</span>
+                        </div>
+                        <p>Freshly tapped sweet palm sap, served traditionally chilled. An authentic taste of village life.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-3')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-4" data-name="Classic Chapman" data-price="3500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/chapman.jpg" alt="Classic Chapman" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Classic Chapman</h3>
+                            <span class="price">₦3,500</span>
+                        </div>
+                        <p>Nigeria's favorite mocktail. A refreshing blend of fruity sodas, Angostura bitters, and fresh cucumber slices.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-4')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-5" data-name="Pineapple & Ginger Juice" data-price="3000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/pineappleandgingerdrink.jpg" alt="Pineapple and Ginger" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Pineapple & Ginger Juice</h3>
+                            <span class="price">₦3,000</span>
+                        </div>
+                        <p>Freshly squeezed tropical pineapples with a sharp, healthy kick of raw ginger. Made fresh daily.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-5')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-6" data-name="Kunun Aya (Tiger Nut Milk)" data-price="3500">
+                    <div class="menu-img-wrapper">
+                        <img src="images/Tiger nut (kunu aya).jpg" alt="Kunun Aya" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Kunun Aya (Tiger Nut)</h3>
+                            <span class="price">₦3,500</span>
+                        </div>
+                        <p>A tremendously refreshing, creamy dairy-free milk made from blended tiger nuts, coconut, and dates.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-6')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-7" data-name="Ice Cold Orijin" data-price="2000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/orijindrink.jpg" alt="Orijin" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Ice Cold Orijin Bitters</h3>
+                            <span class="price">₦2,000</span>
+                        </div>
+                        <p>The iconic Nigerian herbal spirit blend. Served brutally cold to accompany heavy meals.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-7')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal fade-up" data-category="drinks" data-id="drink-8" data-name="Stout (Guinness)" data-price="4000">
+                    <div class="menu-img-wrapper">
+                        <img src="images/stoutextra.jpg" alt="Guinness Stout" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Extra Stout (Guinness)</h3>
+                            <span class="price">₦4,000</span>
+                        </div>
+                        <p>A classic, big bottle of robust Nigerian-brewed foreign extra stout. Dark, bold, and perfectly chilled.</p>
+                        <div class="menu-action">
+                            <button class="btn-add-tray" onclick="addToTray('drink-8')">+ Add to Tray</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds1" data-name="Fruit Platter" data-price="5000">
+                    <div class="menu-img-wrapper"><img src="images/Fruit Platter.jpg" alt="Fruit Platter" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Fruit Platter</h3><span class="price">₦5,000</span></div>
+                        <p>A generous spread of freshly cut watermelon, pineapple, and pawpaw.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds1')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds2" data-name="Coconut Cake" data-price="3500">
+                    <div class="menu-img-wrapper"><img src="images/coconut cake.jpg" alt="Coconut Cake" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Coconut Cake</h3><span class="price">₦3,500</span></div>
+                        <p>Moist sponge cake deeply infused with premium tropical coconut.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds2')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds3" data-name="Fruit Cake" data-price="4000">
+                    <div class="menu-img-wrapper"><img src="images/Fruit Cake.jpg" alt="Fruit Cake" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Fruit Cake</h3><span class="price">₦4,000</span></div>
+                        <p>A dense and rich cake loaded with dark fruits and raisins.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds3')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds4" data-name="Red Velvet Cake" data-price="4500">
+                    <div class="menu-img-wrapper"><img src="images/Red Velvet Cake.jpg" alt="Red Velvet Cake" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Red Velvet Cake</h3><span class="price">₦4,500</span></div>
+                        <p>Luxurious red velvet slice topped with authentic cream cheese frosting.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds4')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds5" data-name="Chocolate Ice Cream" data-price="2500">
+                    <div class="menu-img-wrapper"><img src="images/chocolate cake.jpg" alt="Chocolate Ice Cream" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Chocolate Ice Cream</h3><span class="price">₦2,500</span></div>
+                        <p>Smooth classic chocolate cake.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds5')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds6" data-name="Peanut Brittles" data-price="1500">
+                    <div class="menu-img-wrapper"><img src="images/Peanut brittle.jpg" alt="Peanut Brittles" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Peanut Brittles</h3><span class="price">₦1,500</span></div>
+                        <p>Caramelized roasted peanuts shaped into a satisfying crunch.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds6')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal fade-up" data-category="desserts" data-id="add-ds7" data-name="Chef's Brittle" data-price="3000">
+                    <div class="menu-img-wrapper"><img src="images/chef'brittle.jpg" alt="Chef's Brittle" class="menu-img"></div>
+                    <div class="menu-info">
+                        <div class="menu-title-row"><h3>Chef's Brittle</h3><span class="price">₦3,000</span></div>
+                        <p>A secret premium brittle mix containing cashew nuts, peanuts, and honey.</p>
+                        <div class="menu-action"><button class="btn-add-tray" onclick="addToTray('add-ds7')">+ Add to Tray</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No matching food found. Try a different search term.</p>
+            </div>
+
+            <!-- Login Prompt Modal -->
+            <div class="login-modal-overlay" id="loginModalOverlay" style="display: none;">
+                <div class="login-modal">
+                    <div class="login-modal-header">
+                        <h3>Login Required</h3>
+                        <button class="close-modal" onclick="hideLoginModal()">&times;</button>
+                    </div>
+                    <div class="login-modal-body">
+                        <p>Please login to add items to your tray and place orders.</p>
+                        <div class="login-modal-actions">
+                            <button class="btn btn-secondary" onclick="hideLoginModal()">Cancel</button>
+                            <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Tray Button -->
+    <div class="floating-tray-btn" id="floatingTrayBtn" onclick="toggleTray()">
+        <span class="tray-icon">🛒</span>
+        <span class="tray-badge" id="trayBadge">0</span>
+    </div>
+
+    <!-- Login Button -->
+    <div class="menu-login-btn" id="menuLoginBtn">
+        <button class="login-floating-btn" onclick="window.location.href='login.html'">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Slide-Out Tray Panel -->
+    <div class="tray-overlay" id="trayOverlay" onclick="toggleTray()"></div>
+    <div class="tray-panel" id="trayPanel">
+        <div class="tray-header">
+            <h2>Your Serving Tray</h2>
+            <button class="close-tray" onclick="toggleTray()">&times;</button>
+        </div>
+        <div class="tray-items" id="trayItems">
+            <!-- Items will be injected here via JS -->
+            <p class="empty-tray-msg">Your tray is empty.</p>
+        </div>
+        <div class="tray-footer">
+            <div class="tray-total">
+                <span>Total</span>
+                <span id="trayTotalAmount">₦0</span>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html">My Activity</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import { auth, onAuthStateChanged } from './firebase.js';
+
+        // Monitor Firebase auth and sync with localStorage for backward compatibility
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                localStorage.setItem('ekoLoggedInUser', user.email);
+            } else {
+                localStorage.removeItem('ekoLoggedInUser');
+            }
+            
+            if (typeof updateLoginButtonVisibility === 'function') {
+                updateLoginButtonVisibility();
+            }
+        });
+    </script>
+</body>
+</html>
+

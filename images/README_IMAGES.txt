@@ -1,0 +1,97 @@
+﻿=== EKO HERITAGE IMAGE UPLOAD GUIDE ===
+
+To make your website images appear, simply drag your real photos into this 'images' folder and rename them to EXACTLY match the filenames listed below. The website will automatically detect them!
+
+REQUIRED FILENAMES:
+
+- african-platter.jpg
+- african-salad-abacha.jpg
+- akara-balls.jpg
+- amala-and-ewedu.jpg
+- assorted-meat-platter.jpg
+- asun-bites.jpg
+- authentic-nkwobi.jpg
+- banga-soup-starch.jpg
+- chef-adebayo-lawal.jpg
+- chef-s-brittle.jpg
+- chicken-suya-wings.jpg
+- chocolate-ice-cream.jpg
+- classic-chapman.jpg
+- coconut-cake.jpg
+- coconut-candy.jpg
+- donkwa.jpg
+- edikang-ikong-soup.jpg
+- efo-riro.jpg
+- egusi-special.jpg
+- event-hall.jpg
+- events-director.jpg
+- ewa-agoyin.jpg
+- ewa-agoyin-plantain.jpg
+- fish-croquettes.jpg
+- fisherman-soup.jpg
+- fish-pepper-soup.jpg
+- fresh-palm-wine.jpg
+- fried-plantain-cubes.jpg
+- fruit-cake.jpg
+- fruit-platter.jpg
+- fruit-punch.jpg
+- general-manager.jpg
+- gizdodo.jpg
+- glass-pattern.jpg (The blurred background pattern for reservations)
+- goat-meat-pepper-soup.jpg
+- golden-puff-puff.jpg
+- grilled-fish-platter.jpg
+- guinness-stout.jpg
+- head-mixologist.jpg
+- hero-background.jpg (The main hero background image)
+- house-red-wine.jpg
+- independence-day-celebration.jpg
+- indomie-special.jpg
+- kunun-aya.jpg
+- map-placeholder.jpg (Rename your map screenshot to this)
+- meatpie-bites.jpg
+- moi-moi.jpg
+- nkwobi.jpg
+- ofada-rice.jpg
+- oil-rice-concoction.jpg
+- orijin.jpg
+- palm-wine.jpg
+- party-jollof-rice.jpg
+- peanut-brittles.jpg
+- peppered-ponmo.jpg
+- peppered-snail.jpg
+- peppersoup-special.jpg
+- pineapple-and-ginger.jpg
+- plantain-brownie.jpg
+- plantain-chips-peppersauce.jpg
+- plantain-pancakes.jpg
+- point-and-kill-catfish.jpg
+- pounded-yam-and-egusi.jpg
+- premium-dining.jpg (The Call-To-Action background image)
+- premium-ram-suya.jpg
+- red-velvet-cake.jpg
+- restaurant-interior.jpg
+- roasted-boli-and-fish.jpg
+- royal-platter.jpg
+- samosa.jpg
+- seafood-okra.jpg
+- seafood-platter.jpg
+- seafood-rice.jpg
+- shuku-shuku.jpg
+- spaghetti-surprise.jpg
+- spicy-asun-bowl.jpg
+- spicy-asun-platter.jpg
+- spicy-snail-kebab.jpg
+- spring-rolls.jpg
+- suya-skewers.jpg
+- the-eko-heritage-story.jpg
+- tigernut-milk.jpg
+- turkey-platter-chicken.jpg
+- valentine-s-day-gala.jpg
+- weekend-special-combo.jpg
+- white-rice-stew.jpg
+- women-s-day-brunch.jpg
+- yam-sauce.jpg
+- zobo-drink.jpg
+- zobo-sorbet.jpg
+

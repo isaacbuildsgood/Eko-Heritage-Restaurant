@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tickets | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .ticket-box {
+            background: rgba(21, 26, 24, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .event-banner {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .event-banner h2 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .event-banner p {
+            color: var(--secondary-color);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .ticket-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(13, 17, 16, 0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .ticket-modal-content {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            border: 1px solid var(--accent-color);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+            </div>
+            
+            <a href="reservations.html" class="btn btn-primary nav-cta">Book a Table</a>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+    </div>
+
+    <!-- Ticketing Section -->
+    <section class="section subpage-top" style="min-height: 100vh; display: flex; align-items: center; background: url('./images/premium-dining.jpg') center/cover fixed;">
+        <div class="container reveal fade-up" style="width: 100%;">
+            <div class="ticket-box">
+                <div class="event-banner">
+                    <h2 id="dynamicEventName">Special Event Tickets</h2>
+                    <p id="dynamicEventDate">Secure your entry</p>
+                </div>
+                
+                <form id="ticketingForm">
+                    <input type="hidden" name="EventName" id="hiddenEventName" value="Special Event">
+                    <div class="input-group" style="margin-bottom: 20px;">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="input-group" style="margin-bottom: 20px;">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-row" style="margin-bottom: 20px;">
+                        <div class="input-group">
+                            <label for="ticketTier">Ticket Tier</label>
+                            <select id="ticketTier" name="ticketTier" required>
+                                <option value="" disabled selected>Select Tier...</option>
+                                <option value="Regular (₦15,000)">Regular Entry - ₦15,000</option>
+                                <option value="VIP (₦50,000)">VIP Lounge Access - ₦50,000</option>
+                                <option value="VVIP Table (₦250,000)">VVIP Table (Up to 5) - ₦250,000</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="btnBuyTickets">Purchase Tickets</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="ticketModal" class="ticket-modal">
+        <div class="ticket-modal-content" id="ticketModalBox">
+            <h2 style="color: #fff; margin-bottom: 15px; font-family: var(--font-heading);">Tickets Secured!</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">Your reservation request has been received. Please check your email for the payment link and ticket confirmation.</p>
+            <button class="btn btn-primary" onclick="window.location.href='events.html'">Back to Events</button>
+        </div>
+    </div>
+
+    <!-- Login Prompt Modal -->
+    <div class="login-modal-overlay" id="loginModalOverlay" style="display: none;">
+        <div class="login-modal">
+            <div class="login-modal-header">
+                <h3>Login Required</h3>
+                <button class="close-modal" onclick="hideLoginModal()">&times;</button>
+            </div>
+            <div class="login-modal-body">
+                <p>Please login to purchase event tickets.</p>
+                <div class="login-modal-actions">
+                    <button class="btn btn-secondary" onclick="hideLoginModal()">Cancel</button>
+                    <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import { auth, db, collection, addDoc, onAuthStateChanged } from './firebase.js';
+
+        let currentUserUid = null;
+        onAuthStateChanged(auth, (user) => {
+            currentUserUid = user ? user.uid : null;
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smart URL Parsing
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventType = urlParams.get('event');
+            
+            const eventNameEl = document.getElementById('dynamicEventName');
+            const eventDateEl = document.getElementById('dynamicEventDate');
+            const hiddenNameEl = document.getElementById('hiddenEventName');
+            
+            if (eventType === 'independence') {
+                eventNameEl.textContent = 'Naija Independence Bash';
+                eventDateEl.textContent = 'October 1 • 8:00 PM';
+                hiddenNameEl.value = 'Naija Independence Bash';
+            }
+            
+            // Form Submission
+            const tickForm = document.getElementById('ticketingForm');
+            const btn = document.getElementById('btnBuyTickets');
+            const modal = document.getElementById('ticketModal');
+            const modalBox = document.getElementById('ticketModalBox');
+            
+            if (tickForm) {
+                tickForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    if (!isLoggedIn()) {
+                        showLoginPrompt();
+                        return;
+                    }
+                    
+                    btn.textContent = 'Processing...';
+                    btn.disabled = true;
+                    
+                    try {
+                        await fetch('https://formspree.io/f/mykloglr', {
+                            method: 'POST',
+                            body: new FormData(tickForm),
+                            headers: { 'Accept': 'application/json' }
+                        });
+
+                        const ticketOrderId = '#EKO-' + Math.floor(1000 + Math.random() * 9000);
+                        const ticketDetails = document.getElementById('quantity').value + 'x ' + document.getElementById('ticketTier').value + ' Ticket(s) for ' + hiddenNameEl.value;
+
+                        // Save to Activity History
+                        let history = JSON.parse(localStorage.getItem('ekoHistory')) || [];
+                        history.push({
+                            id: ticketOrderId,
+                            date: new Date().toISOString(),
+                            type: 'Event Ticket',
+                            details: ticketDetails
+                        });
+                        localStorage.setItem('ekoHistory', JSON.stringify(history));
+
+                        if (currentUserUid) {
+                            try {
+                                await addDoc(collection(db, 'orders'), {
+                                    userId: currentUserUid,
+                                    orderId: ticketOrderId,
+                                    date: new Date().toISOString(),
+                                    type: 'Event Ticket',
+                                    details: ticketDetails,
+                                    quantity: document.getElementById('quantity').value,
+                                    tier: document.getElementById('ticketTier').value,
+                                    createdAt: new Date().toISOString()
+                                });
+                            } catch (firestoreError) {
+                                console.error('Firestore ticket save failed:', firestoreError);
+                            }
+                        }
+
+                        modal.style.display = 'flex';
+                        setTimeout(() => { modalBox.style.transform = 'scale(1)'; }, 50);
+                    } catch (err) {
+                        alert('Something went wrong. Please try again later.');
+                        btn.textContent = 'Purchase Tickets';
+                        btn.disabled = false;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

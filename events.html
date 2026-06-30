@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Parties | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html" class="active">Events</a> <!-- Wait, events.html doesn't have active originally in nav-links? Let me check grep -->
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Signature Events Calendar -->
+    <section class="section subpage-top" id="calendar">
+        <div class="container" style="text-align: center;">
+            <div class="reveal fade-up">
+                <h2 class="section-title">Signature <span class="highlight">Events</span></h2>
+                <p style="max-width: 600px; margin: 0 auto 50px; color: var(--text-muted);">Join us for our exclusive, curated celebrations. From romantic evenings to vibrant holiday parties, Eko Heritage is the place to be.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+                    <!-- Event 1: Valentine's -->
+                    <div style="background: var(--bg-card); border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.05); text-align: left; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/valentine'sdayceleb.jpg" alt="Valentine's Day Gala" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <div style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase;">Feb 14 • 7:00 PM</div>
+                            <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 15px; font-family: var(--font-heading);">A Night of Romance Gala</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">An exquisite 5-course lover's menu featuring aphrodisiac-infused Nigerian delicacies, accompanied by a live jazz band.</p>
+                            <a href="reservations.html?event=valentines" class="btn btn-outline" style="width: 100%; text-align: center;">Book a Table</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2: Women's Day -->
+                    <div style="background: var(--bg-card); border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.05); text-align: left; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/women'sdaybrunch.jpg" alt="Women's Day Brunch" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <div style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase;">March 8 • 11:00 AM</div>
+                            <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 15px; font-family: var(--font-heading);">Queens of Heritage Brunch</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">Celebrate International Women's Day with complimentary bottomless mimosas and a specialized brunch menu honoring Nigerian superwomen.</p>
+                            <a href="reservations.html?event=womens-day" class="btn btn-outline" style="width: 100%; text-align: center;">Reserve Your Spot</a>
+                        </div>
+                    </div>
+
+                    <!-- Event 3: Independence Day -->
+                    <div style="background: var(--bg-card); border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.05); text-align: left; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/independencedaybash.jpg" alt="Independence Day Celebration" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 30px;">
+                            <div style="color: var(--secondary-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase;">Oct 1 • 8:00 PM</div>
+                            <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 15px; font-family: var(--font-heading);">Naija Independence Bash</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">The ultimate green-and-white party. Expect celebrity guest DJs, endless Asun, premium bottle service, and dancing until dawn.</p>
+                            <a href="event-tickets.html?event=independence" class="btn btn-outline" style="width: 100%; text-align: center;">Get Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Party Section -->
+    <section class="events section" id="events" style="background-color: var(--bg-dark);">
+        <div class="container layout-grid reverse">
+            <div class="events-image-wrapper reveal fade-right">
+                <!-- ADD YOUR EVENT HALL OR PARTY IMAGE HERE -->
+                <img src="images/eventhall.jpg" alt="Event Hall" class="image-box">
+            </div>
+            <div class="events-text reveal fade-left">
+                <h2 class="section-title">Host Your <span class="highlight">Parties</span> With Us</h2>
+                <p>We know how to throw a proper Naija party! Our luxurious event lounge is the perfect venue for your birthdays, wedding receptions, or corporate gatherings.</p>
+                <ul class="features-list">
+                    <li><i class="icon">✨</i> Custom Menu & High-End Catering</li>
+                    <li><i class="icon">🎧</i> Live DJ & Premium Sound System</li>
+                    <li><i class="icon">🍾</i> VIP Lounge & Bottle Service</li>
+                </ul>
+                <button onclick="openEventModal()" class="btn btn-primary mt-4">Inquire About Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Reviews Section -->
+    <section class="section" style="background-color: var(--bg-card);">
+        <div class="container" style="text-align: center;">
+            <div class="reveal fade-up">
+                <h2 class="section-title">Unforgettable <span class="highlight">Celebrations</span></h2>
+                <p style="max-width: 600px; margin: 0 auto 50px; color: var(--text-muted);">See what our guests say about hosting their milestone events with us.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="background: var(--bg-dark); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem; margin-bottom: 15px; letter-spacing: 2px;">★★★★★</div>
+                        <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"We hosted my 30th birthday in the VIP lounge and the staff handled everything flawlessly. The custom menu was a huge hit!"</p>
+                        <h4 style="color: #fff; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">— Michael T.</h4>
+                    </div>
+                    <div style="background: var(--bg-dark); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem; margin-bottom: 15px; letter-spacing: 2px;">★★★★★</div>
+                        <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"Our corporate dinner was spectacular. From the live DJ to the premium bottle service, Eko Heritage knows how to host a party."</p>
+                        <h4 style="color: #fff; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">— Zenith Partners</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .event-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 17, 16, 0.95); z-index: 1000; justify-content: center; align-items: center; padding: 20px; }
+        .event-modal.active { display: flex; }
+        .event-modal-content { background: var(--bg-card); border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.1); padding: 40px; max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; animation: slideIn 0.3s ease; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        .event-modal-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+        .event-modal-header h2 { font-family: var(--font-heading); font-size: 1.8rem; color: #fff; }
+        .event-modal-header .highlight { color: var(--secondary-color); }
+        .close-event-modal { background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; width: 40px; height: 40px; }
+        .close-event-modal:hover { color: var(--secondary-color); }
+        .event-form { display: flex; flex-direction: column; gap: 20px; }
+        .event-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .event-form-block { display: flex; flex-direction: column; }
+        .event-form-block label { font-size: 0.9rem; font-weight: 500; color: #fff; margin-bottom: 8px; text-transform: uppercase; }
+        .event-form-block input, .event-form-block select, .event-form-block textarea { padding: 12px; background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-size: 0.95rem; }
+        .event-form-block input:focus, .event-form-block select:focus, .event-form-block textarea:focus { outline: none; border-color: var(--secondary-color); }
+        .event-form-block select { appearance: none; }
+        .event-form-block textarea { resize: vertical; min-height: 100px; }
+        .event-form-full { grid-column: 1 / -1; }
+        .event-modal-submit { padding: 14px; background: var(--accent-color); color: #fff; font-weight: 600; text-transform: uppercase; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-top: 10px; }
+        .event-modal-submit:hover { background: #c94f29; }
+        .event-modal-submit:disabled { background: var(--text-muted); cursor: not-allowed; }
+        @media (max-width: 768px) { .event-modal-content { padding: 20px; } .event-form-row { grid-template-columns: 1fr; } }
+    </style>
+
+    <div id="eventModal" class="event-modal">
+        <div class="event-modal-content">
+            <div class="event-modal-header">
+                <h2>Inquire About <span class="highlight">Events</span></h2>
+                <button class="close-event-modal" onclick="closeEventModal()">&times;</button>
+            </div>
+            <form class="event-form" id="eventInquiryForm">
+                <div class="event-form-row">
+                    <div class="event-form-block">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="event-form-block">
+                        <label>Email *</label>
+                        <input type="email" name="email" required placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="event-form-row">
+                    <div class="event-form-block">
+                        <label>Phone *</label>
+                        <input type="tel" name="phone" required placeholder="+234 800-XXXX-XXXX">
+                    </div>
+                    <div class="event-form-block">
+                        <label>Guest Count *</label>
+                        <input type="number" name="guest_count" required placeholder="50" min="1">
+                    </div>
+                </div>
+                <div class="event-form-row">
+                    <div class="event-form-block">
+                        <label>Event Type *</label>
+                        <select name="event_type" required>
+                            <option value="" disabled selected>Select...</option>
+                            <option>Birthday</option>
+                            <option>Wedding</option>
+                            <option>Corporate</option>
+                            <option>Anniversary</option>
+                            <option>Private Dinner</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="event-form-block">
+                        <label>Preferred Date *</label>
+                        <input type="date" name="event_date" required>
+                    </div>
+                </div>
+                <div class="event-form-block event-form-full">
+                    <label>Details</label>
+                    <textarea name="message" placeholder="Tell us about your event..."></textarea>
+                </div>
+                <button type="submit" class="event-modal-submit" id="eventSubmitBtn">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

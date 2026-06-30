@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eko Heritage | Premium Nigerian Restaurant & Lounge</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="images/herobackround.jpg" alt="Hero Background" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>Authentic Nigerian Flavors,<br>Unforgettable Experiences.</h1>
+            <p>The premium spot for legendary Jollof, spicy Suya, and vibrant parties in the heart of the city.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                <a href="reservations.html" class="btn btn-outline">Make a Reservation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Vibe Section -->
+    <section class="about section" id="about">
+        <div class="container layout-grid">
+            <div class="about-text reveal fade-left">
+                <h2 class="section-title">More Than Just a Meal.<br>It's an <span class="highlight">Experience</span>.
+                </h2>
+                <p>Welcome to Eko Heritage, where the rich culinary traditions of Nigeria meet modern luxury. From our
+                    masterfully crafted native soups to our world-famous party Jollof, every dish tells a story of home.
+                </p>
+                <p>Whether you're here for an intimate dinner, a quick Suya fix, or a massive celebration, we provide an
+                    atmosphere that is undeniably vibrant and wonderfully Nigerian.</p>
+                <a href="menu.html" class="btn btn-outline mt-4">View Full Menu</a>
+            </div>
+            <div class="about-image-wrapper reveal fade-right">
+                <!-- ADD YOUR RESTAURANT INTERIOR OR VIBE IMAGE HERE -->
+                <img src="images/resturantinterior.jpg" alt="Restaurant Interior" class="image-box">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" style="padding-top: 50px;">
+        <div class="container" style="text-align: center;">
+            <div class="reveal fade-up">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem; margin-bottom: 15px; letter-spacing: 2px;">★★★★★</div>
+                        <p style="font-size: 1.05rem; font-style: italic; margin-bottom: 20px; line-height: 1.6;">"Easily the most authentic and luxurious Nigerian dining experience I've had. The attention to detail is staggering."</p>
+                        <h4 style="color: #fff; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">— Food & Culture Mag</h4>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem; margin-bottom: 15px; letter-spacing: 2px;">★★★★★</div>
+                        <p style="font-size: 1.05rem; font-style: italic; margin-bottom: 20px; line-height: 1.6;">"The vibe is electric. Whether for an intimate date or a vibrant gathering, the ambiance is consistently unmatched."</p>
+                        <h4 style="color: #fff; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">— Lagos Luxe Guide</h4>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem; margin-bottom: 15px; letter-spacing: 2px;">★★★★★</div>
+                        <p style="font-size: 1.05rem; font-style: italic; margin-bottom: 20px; line-height: 1.6;">"The Jollof actually tastes like home, but presented with Michelin-star elegance. Absolutely brilliant execution."</p>
+                        <h4 style="color: #fff; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">— Chef Damilola</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser Section (Replaces full sections) -->
+    <section class="teaser section" style="background-color: var(--bg-card); text-align: center;">
+        <div class="container reveal fade-up">
+            <h2 class="section-title">Planning an Event?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Discover our premium venue,
+                catering services, and party packages.</p>
+            <a href="events.html" class="btn btn-primary">Discover Events</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Reservations Section -->
+    <section class="reservations section subpage-top" id="reservations" style="min-height: 100vh; display: flex; align-items: center;">
+        <div class="container reveal">
+            <div class="reservation-box glass">
+                <div class="reservation-content">
+                    <h2 class="section-title">Reserve a Table</h2>
+                    <p>Secure your spot or book our venue for a private event. We will confirm your reservation via email.</p>
+                </div>
+                
+                <form class="reservation-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="E.g. Chukwudi B." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="time">Reservation Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="1-2">1 - 2 People</option>
+                                <option value="3-5">3 - 5 People</option>
+                                <option value="6-10">6 - 10 People</option>
+                                <option value="10+">10+ (Party/Event)</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="type">Reservation Type</label>
+                            <select id="type" name="type">
+                                <option value="dining">Standard Dining</option>
+                                <option value="vip">VIP Lounge</option>
+                                <option value="event">Private Event / Party Hall</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="requests">Special Requests (Optional)</label>
+                        <textarea id="requests" name="requests" rows="4" placeholder="Celebrating a birthday? Need a specific table? Let us know!"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html">My Activity</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal -->
+    <div id="resModalOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 2000; opacity: 0; visibility: hidden; transition: var(--transition); display: flex; align-items: center; justify-content: center;">
+        <div id="resModalBox" style="background: var(--bg-card); padding: 40px; border-radius: 20px; text-align: center; max-width: 500px; width: 90%; transform: translateY(50px); transition: all 0.4s ease; border: 1px solid rgba(255,255,255,0.1);">
+            <div id="resModalStep1">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #fff; font-family: var(--font-heading);">Table Pre-Booked</h3>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">To complete your reservation, please let us know: Have you already pre-ordered your food?</p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <button id="btnOrderedYes" class="btn btn-outline" style="min-width: 140px;">Yes, I have</button>
+                    <button id="btnOrderedNo" class="btn btn-primary" style="min-width: 140px;">No, I haven't</button>
+                </div>
+            </div>
+            <div id="resModalStep2" style="display: none;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #fff; font-family: var(--font-heading);">Avoid the Wait!</h3>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Would you like to pre-order your meals now? Linking food to your table carries a ₦10 booking fee but guarantees priority service when you arrive.</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <button id="btnOrderNow" class="btn btn-primary" style="flex: 1; min-width: 200px;">Yes, take me to menu</button>
+                    <button id="btnOrderLater" class="btn btn-outline" style="flex: 1; min-width: 200px;">No, I'll order at the table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Prompt Modal -->
+    <div class="login-modal-overlay" id="loginModalOverlay" style="display: none;">
+        <div class="login-modal">
+            <div class="login-modal-header">
+                <h3>Login Required</h3>
+                <button class="close-modal" onclick="hideLoginModal()">&times;</button>
+            </div>
+            <div class="login-modal-body">
+                <p>Please login to make a reservation.</p>
+                <div class="login-modal-actions">
+                    <button class="btn btn-secondary" onclick="hideLoginModal()">Cancel</button>
+                    <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth, db, collection, addDoc, onAuthStateChanged } from './firebase.js';
+
+        let currentUserUid = null;
+        onAuthStateChanged(auth, (user) => {
+            currentUserUid = user ? user.uid : null;
+        });
+
+        window.saveFirestoreReservation = async function(reservationData) {
+            if (!currentUserUid) {
+                throw new Error('User must be authenticated to save reservation.');
+            }
+
+            return await addDoc(collection(db, 'orders'), {
+                ...reservationData,
+                userId: currentUserUid,
+                createdAt: new Date().toISOString()
+            });
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

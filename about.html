@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- 1. Our Story Section -->
+    <section class="section subpage-top" id="story">
+        <div class="container layout-grid">
+            <div class="reveal fade-right">
+                <h2 class="section-title">The <span class="highlight">Heritage</span> Story</h2>
+                <p>Born out of a deep love for authentic Nigerian culture and world-class hospitality, Eko Heritage is more than just a restaurant—it's a tribute to the resilient, vibrant, and flavorful spirit of Lagos.</p>
+                <p>What started as a vision to elevate traditional Nigerian cuisine has grown into a premier dining destination. We realized that fine dining doesn't mean leaving behind the rich, bold flavors of home.</p>
+                <p>Our journey is about bringing the soulful essence of the motherland to a luxurious, modern setting. From the smokey aroma of firewood Jollof to the fiery heat of our signature Asun, every dish is an ode to our roots.</p>
+            </div>
+            <div class="reveal fade-left">
+                <!-- ADD YOUR STORY IMAGE HERE -->
+                <img src="images/storyvisionary.jpg" alt="The Eko Heritage Story" class="image-box" style="height: 500px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Meet the CEO Section -->
+    <section class="section" id="chef" style="background-color: var(--bg-card);">
+        <div class="container layout-grid">
+            <div class="reveal fade-right" style="order: 2;">
+                <h2 class="section-title">Meet the <span class="highlight">CEO</span></h2>
+                <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">STARLIN 'GLOBALBOY' IFEABUNIKE</h3>
+                <p>As the visionary founder and CEO of Eko Heritage, Starlin brings a compelling mission: to position authentic Nigerian cuisine at the forefront of global culinary excellence while celebrating the cultural richness that defines our brand.</p>
+                <p>His leadership philosophy extends beyond the kitchen—it encompasses operational brilliance, cultural authenticity, and an unwavering commitment to creating experiences that resonate emotionally with every guest. Under his direction, Eko Heritage has evolved into a destination where heritage meets innovation.</p>
+                <p style="font-style: italic; color: var(--secondary-color); margin-top: 20px;">"Eko Heritage is not just a restaurant—it's a movement to reclaim the narrative of African excellence on the world stage."</p>
+            </div>
+            <div class="reveal fade-left" style="order: 1;">
+                <!-- CEO PORTRAIT -->
+                <img src="images/starlinavatar.jpeg" alt="STARLIN 'GLOBALBOY' IFEABUNIKE - CEO" class="image-box" style="height: 600px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="section" id="team" style="background-color: var(--bg-dark);">
+        <div class="container" style="text-align: center;">
+            <div class="reveal fade-up">
+                <h2 class="section-title">The <span class="highlight">Leadership</span></h2>
+                <p style="max-width: 600px; margin: 0 auto 50px; color: var(--text-muted);">A dedicated team of visionaries working in harmony to craft exceptional culinary and hospitality experiences at every touchpoint.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 40px;">
+                    <!-- Team Member 1: Chef -->
+                    <div style="background: transparent; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/CHEFSWAG.jpg" alt="Executive Chef" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius); margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 5px; font-family: var(--font-heading);">Chef Madudrills</h3>
+                        <p style="color: var(--secondary-color); font-weight: 500; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Executive Chef</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">With over 15 years in Michelin-starred kitchens, Madudrills channels his grandmother's wisdom through contemporary technique, creating dishes that honor tradition while pioneering the future of African cuisine.</p>
+                    </div>
+                    <!-- Team Member 2: General Manager -->
+                    <div style="background: transparent; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/deborahreview.jpeg" alt="General Manager" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius); margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 5px; font-family: var(--font-heading);">Deborah I.</h3>
+                        <p style="color: var(--secondary-color); font-weight: 500; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">General Manager</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Deborah orchestrates seamless operations and world-class hospitality, ensuring every detail—from reservation to dessert—reflects the excellence and warmth that defines Eko Heritage's promise.</p>
+                    </div>
+                    <!-- Team Member 3: Event Director -->
+                    <div style="background: transparent; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="images/evedirector.jpg" alt="Event Director" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius); margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 5px; font-family: var(--font-heading);">Aisha Bello</h3>
+                        <p style="color: var(--secondary-color); font-weight: 500; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Event Director</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Aisha transforms visions into unforgettable moments, orchestrating private affairs and exclusive experiences that celebrate life's most meaningful occasions with elegance and authenticity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Our Philosophy Section -->
+    <section class="section" id="philosophy">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <div class="reveal fade-up">
+                <h2 class="section-title">Uncompromising <span class="highlight">Quality</span></h2>
+                <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">Our Philosophy on Sourcing and Ingredients</p>
+                <p>We believe that a truly extraordinary meal begins long before it reaches the kitchen. It begins with the soil, the farmer, and the spice merchant.</p>
+                <p style="margin-top: 15px;">At Eko Heritage, we are uncompromising about our ingredients. We import our essential spices directly from local markets in Nigeria to ensure the flavor profile remains untouched by commercial processing. Our palm oil is sourced from sustainable, artisanal producers, and our fresh produce and meats are proudly farm-to-table.</p>
+                <p style="margin-top: 15px;">You aren't just paying for a meal; you are partaking in top-tier quality and an unyielding commitment to culinary excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Atmosphere Section -->
+    <section class="section" id="atmosphere" style="background-color: var(--bg-card);">
+        <div class="container layout-grid">
+            <div class="reveal fade-right">
+                <h2 class="section-title">The <span class="highlight">Atmosphere</span></h2>
+                <p>Eko Heritage isn't just about dining; it's a sensory experience. Our interior architecture blends modern minimalist luxury with profound, traditional African artistry.</p>
+                <ul class="features-list mt-4" style="color: var(--text-muted);">
+                    <li><strong style="color: #fff;">The Main Dining Hall:</strong> A vibrant, warmly lit space perfect for lively dinners and socializing, echoing the electric energy of Lagos nights.</li>
+                    <li style="margin-top: 15px;"><strong style="color: #fff;">The VIP Lounge:</strong> An exclusive enclave featuring plush seating, bespoke cocktails, and an intimately curated afrobeats playlist.</li>
+                    <li style="margin-top: 15px;"><strong style="color: #fff;">Private Dining Rooms:</strong> Elegantly secluded spaces designed for milestone celebrations and discrete corporate functions.</li>
+                </ul>
+            </div>
+            <div class="reveal fade-left">
+                <!-- ADD INTERIOR/ATMOSPHERE IMAGE HERE -->
+                <img src="images/INTERIOR2.jpg" alt="Restaurant Interior" class="image-box" style="height: 400px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Press & Standard Section -->
+    <section class="section" id="standard">
+        <div class="container" style="text-align: center;">
+            <div class="reveal fade-up">
+                <h2 class="section-title">The <span class="highlight">Eko Standard</span></h2>
+                <p style="max-width: 600px; margin: 0 auto 50px; color: var(--text-muted);">We hold ourselves to an international standard of hospitality. Here is what our esteemed guests have to say.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"The best Jollof I've had outside of Lagos. The ambiance is unmatched and the service is truly world-class."</p>
+                        <h4 style="color: var(--secondary-color);">— The Culinary Digest</h4>
+                    </div>
+                    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"Eko Heritage manages to capture the soulful essence of Nigerian cooking while presenting it with Michelin-level finesse."</p>
+                        <h4 style="color: var(--secondary-color);">— Verified Guest</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call to Action Section -->
+    <section class="section" id="cta" style="background: linear-gradient(to right, rgba(26, 83, 25, 0.9), rgba(13, 17, 16, 0.9)), url('https://placehold.co/1920x600/151A18/333333?text=Premium+Dining') center/cover fixed; text-align: center; padding: 120px 20px;">
+        <div class="container reveal fade-up">
+            <h2 style="font-size: 3.5rem; color: #fff; margin-bottom: 20px; font-family: var(--font-heading);">Experience the Heritage</h2>
+            <p style="font-size: 1.2rem; color: #f4f4f4; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Join us for an unforgettable journey of flavor, culture, and luxury.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="reservations.html" class="btn btn-primary">Book a Table</a>
+                <a href="menu.html" style="background: transparent; border: 2px solid #fff; color: #fff;" class="btn btn-outline" onmouseover="this.style.background='#fff'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">View the Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html">My Activity</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

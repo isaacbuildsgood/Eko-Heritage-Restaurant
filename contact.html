@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Eko Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eko<span>Heritage</span></a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html" id="navActivityLink">My Activity</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="track-order.html" id="mobileActivityLink">My Activity</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Ultra Premium Contact Section -->
+    <section class="contact-ultra section subpage-top" id="contact">
+        <div class="container relative">
+            <div class="ultra-contact-grid reveal fade-up">
+                
+                <!-- Information Panel -->
+                <div class="contact-info-panel">
+                    <span class="eyebrow">Connect With Us</span>
+                    <h2 class="title">We are here to serve <span class="highlight">You.</span></h2>
+                    <p class="desc">Whether you're planning a grand event or simply want to inquire about our menu, our concierge team is at your disposal.</p>
+                    
+                    <div class="contact-method">
+                        <div class="icon-circle">📍</div>
+                        <div class="method-text">
+                            <h4>The Eko Lounge</h4>
+                            <p>123 Victoria Island Way, Lagos Metropolis</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="icon-circle">📞</div>
+                        <div class="method-text">
+                            <h4>Direct Concierge</h4>
+                            <p>+234 800-NAIJA-BITE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="icon-circle">⏰</div>
+                        <div class="method-text">
+                            <h4>Opening Hours</h4>
+                            <p>Tue - Sun, 12PM - 1AM. Closed Mondays.</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <h4 style="font-family: var(--font-heading); color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Dining Guidelines</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                            <div>
+                                <span style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 5px;">Dress Code</span>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Smart elegant. No athletic wear, flip-flops, or casual shorts permitted.</p>
+                            </div>
+                            <div>
+                                <span style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 5px;">Valet Parking</span>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Complimentary VIP valet parking available for all dinner reservations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form & Map Panel -->
+                <div class="contact-form-panel">
+                    <!-- Map Placeholder -->
+                    <div style="width: 100%; height: 200px; background: url('./images/map-placeholder.jpg') center/cover; border-radius: 15px; margin-bottom: 40px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; position: relative;">
+                        <div style="position: absolute; bottom: 15px; right: 15px; background: var(--bg-dark); padding: 8px 15px; border-radius: 20px; font-size: 0.8rem; border: 1px solid var(--primary-color); color: var(--primary-color);">Get Directions</div>
+                    </div>
+                    <form id="contactForm" class="ultra-form">
+                        <div class="form-row">
+                            <div class="input-block">
+                                <label>Full Name</label>
+                                <input type="text" name="name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="input-block">
+                                <label>Email Address</label>
+                                <input type="email" name="email" required placeholder="john@domain.com">
+                            </div>
+                        </div>
+                        <div class="input-block">
+                            <label>Inquiry Type</label>
+                            <select name="inquiry_type" required>
+                                <option value="" disabled selected>Select an option...</option>
+                                <option>Dining Reservation</option>
+                                <option>Private Events & Catering</option>
+                                <option>General Feedback</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label>Your Message</label>
+                            <textarea name="message" required placeholder="How may we powerfully assist you today?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary ultra-btn" id="btnContactSubmit">
+                            <span id="contactBtnText">Send Inquiry</span>
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Eko<span>Heritage</span></h2>
+                <p>Premium Nigerian cuisine & unforgettable experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Event Venue</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="track-order.html">My Activity</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Us</h3>
+                <p>123 Victoria Island Way,<br>Lagos Metropolis</p>
+                <p>Phone: +234 800-NAIJA-BITE</p>
+                <p>Open: Tue - Sun, 12PM - Late</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eko Heritage Restaurant. Designed for greatness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
